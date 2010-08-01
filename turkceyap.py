@@ -23,23 +23,6 @@ class MainPage(webapp.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'index.html')
         self.response.out.write(template.render(path, template_values))
 
-        # self.response.out.write('<html><body>')
-        # submitted_contents = db.GqlQuery("SELECT * FROM SubmittedContent ORDER BY date DESC LIMIT 10")
-        # for submitted_content in submitted_contents:
-        #     if submitted_content.author:
-        #         self.response.out.write('<b>%s</b> wrote:' % submitted_content.author.nickname())
-        #     else:
-        #         self.response.out.write('An anonymous person wrote:')
-        #     self.response.out.write('<blockquote>%s</blockquote>' %
-        #                             cgi.escape(submitted_content.content))
-        # self.response.out.write("""
-        #       <form action="/deasciify" method="post">
-        #         <div><textarea name="content" rows="3" cols="60"></textarea></div>
-        #         <div><input type="submit" value="deasciify"></div>
-        #       </form>
-        #     </body>
-        #   </html>""")
-
 
 class GaeDeasciifier(webapp.RequestHandler):
     """
@@ -64,9 +47,6 @@ class GaeDeasciifier(webapp.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'deasciify.html')
         self.response.out.write(template.render(path, template_values))
 
-        #self.response.out.write('<html><body>You wrote:<pre>')
-        #self.response.out.write(cgi.escape(result))
-        #self.response.out.write('</pre></body></html>')
 
 application = webapp.WSGIApplication(
                                      [('/', MainPage),
@@ -78,4 +58,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
