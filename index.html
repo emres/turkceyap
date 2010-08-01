@@ -1,0 +1,84 @@
+<html>
+  <head>  
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+	<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+
+	<title>Turkish Deasciifier / Türkçe Harf Dönüştürücü</title>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-17742610-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+  </head>
+
+  <body>
+
+	<div class="container">
+	  
+	  <br/><br/>
+
+	  <h1>Turkish Deasciifier</h1>
+	  
+	  <img src="img/logo.png" align="left">
+
+	  <p style="font-size:12pt">
+		<b>English</b>: If you don't have a Turkish keyboard but want to write using
+		proper Turkish letters, you can use this system. Write inside the box below
+		and hit <strong>Deasciify / Türkçeleştir</strong>.
+	  </p>
+
+	  <p style="font-size:12pt">
+		<b>Türkçe</b>: Türkçe klavyeniz yoksa ve Türk diline özgü harfleri kullanmadan
+		yazmak zorunda kalıyorsanız bu sistemden faydalanabilirsiniz. Aşağıdaki
+		kutu içine yazınızı yazın ve
+		<strong>Deasciify / Türkçeleştir</strong> düğmesine basın.
+	  </p>
+
+	  <p>
+		 <form action="/deasciify" method="post">
+		   <div><textarea name="content" style="width:800px; height:300px"></textarea></div>
+		   <div><input type="submit" value="Deasciify / Türkçeleştir"></div>
+		 </form>
+	  </p>
+
+	  <p>
+		This converter is the Python implementation
+		of <a href="http://denizyuret.blogspot.com/">Deniz Yüret</a>'s
+		<a href="http://denizyuret.blogspot.com/2006/11/emacs-turkish-mode.html">converter</a>
+		(in Emacs Lisp) by <a href="http://ileriseviye.org/blog/">Emre Sevinç</a>.
+		If you need something more usable, e.g. in your browser menu, you can use
+		the <a href="https://addons.mozilla.org/en-US/firefox/addon/204311/">Firefox
+		add-on</a> or
+		the <a href="https://chrome.google.com/extensions/detail/nhfdmlgglfmcdheoabgklabmgjklgofk">Google
+		Chrome extension</a>.
+	  </p>
+
+	  <p>
+		Bu sistem <a href="http://denizyuret.blogspot.com/">Deniz Yüret</a>'in
+		Emacs Lisp programlama dili ile
+		yazdığı <a href="http://denizyuret.blogspot.com/2006/11/emacs-turkish-mode.html">sistemin</a>
+		<a href="http://ileriseviye.org/blog/">Emre Sevinç</a> tarafından Python
+		dili ile uygulanmış halidir. Bu sistemin benzerini daha pratik olarak
+		kullanmak
+		isterseniz <a href="https://addons.mozilla.org/en-US/firefox/addon/204311/">Firefox
+		add-on</a> halini
+		da <a href="https://chrome.google.com/extensions/detail/nhfdmlgglfmcdheoabgklabmgjklgofk">Google
+		Chrome extension</a> halini web tarayıcınıza kurabilirsiniz.
+	  </p>
+	</div>
+
+  </body>
+</html>
